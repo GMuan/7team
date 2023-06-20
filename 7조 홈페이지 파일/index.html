@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>메인</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="./b.css">
+  <script>
+function searchAndRedirect() {
+   // 폼 submit 이벤트를 중지합니다.
+  event.preventDefault();
+            
+   // 검색어를 가져옵니다.
+  var searchQuery = document.getElementById("searchInput").value;
+            
+   // 검색 결과 배열을 선언합니다.
+  var searchResults = [
+    {title: "체인지데이즈1", url: "n.html"},
+    {title: "체인지데이즈", url: "n.html"},
+    {title: "기묘한이야기", url: "n.html"},
+    {title: "어거스트러쉬", url: "n.html"},
+    {title: "더글로리", url: "n.html"},
+    {title: "스위트홈", url: "n.html"},
+    {title: "종이의집", url: "n.html"},
+    {title: "인간수업", url: "n.html"},
+    {title: "철인왕후", url: "n.html"},
+    {title: "택배기사", url: "n.html"},
+    {title: "킹덤", url: "n.html"},
+    {title: "DP", url: "n.html"},
+
+    {title: "천원짜리 변호사", url: "w.html"},
+    {title: "그것이알고싶다", url: "w.html"},
+    {title: "낭만닥터김사부", url: "w.html"},
+    {title: "유미의세포들", url: "w.html"},
+    {title: "터미네이터", url: "w.html"},
+    {title: "피의게임", url: "w.html"},
+    {title: "아이로봇", url: "w.html"},
+    {title: "해리포터", url: "w.html"},  
+    {title: "마녀", url: "w.html"},
+    {title: "법쩐", url: "w.html"},
+  
+    {title: "술꾼도시여자들", url: "t.html"},
+    {title: "유미의세포들", url: "t.html"},
+    {title: "왕자의게임", url: "t.html"},
+    {title: "퀴멸의칼날", url: "t.html"},
+    {title: "지구오락실", url: "t.html"},
+    {title: "철인왕후", url: "t.html"},
+    {title: "신서유기", url: "t.html"},
+    {title: "아이로봇", url: "t.html"},  
+    {title: "응답하라", url: "t.html"},
+    {title: "환승연애", url: "t.html"},
+    {title: "letmein", url: "t.html"},
+    {title: "신병", url: "t.html"}
+  ];
+  for (var i = 0; i < searchResults.length; i++) {
+    var result = searchResults[i];
+      if (result.title.toLowerCase() === searchQuery.toLowerCase()) {
+      window.location.href = result.url;
+      return;
+    }
+  }
+  alert("검색 결과가 없습니다.");
+}
+</script>
+
+</head>
+<body>
+<h1> 
+  <span>F</span> 
+  <span>i</span> 
+  <span>n</span>
+  <span>d</span>
+  <span>M</span> 
+  <span>e</span>
+</h1>
+
+<div class="search-bar">
+  <form onsubmit="searchAndRedirect()">
+    <input type="text submit"  id="searchInput" class="form-control   rounded" placeholder="검색을 하세요">
+  </form>
+</div>
+
+  <div class="list"> 
+    <div class="flex-item1"><img src="img.png" width="50" height="50px" >  
+      <a href="n.html">Netflex</a>
+    </div>
+    <div class="flex-item2"><img src="2.png" width="50" height="50px">
+      <a href="w.html"> wave</a>
+    </div>
+    <div class="flex-item3"><img src="4.png"width="50" height="50px">
+      <a href="t.html">Tiving</a></div>
+  </div>
+
+  <div class="menu">
+    <div class="flex-item">
+      <a href="n.html">
+        <img src="NE\체인지데이즈.jpg" style=" width:190px; height: 190px;" alt="체인즈데이즈"><p>체인지데이즈</p>
+      </a> 
+    </div>
+      
+    <div class="flex-item">
+      <a href="w.html">
+        <img src="wave/유미의세포들.jpg" style=" width:190px; height: 190px;" alt="유미의 세포들"><p>유미의 세포들</p>
+      </a>
+    </div>
+
+    <div class="flex-item">  
+      <a href="t.html">
+        <img src="tb/술꾼도시여자들.jpg" style=" width:190px; height: 190px;" alt="술꾼도시여자들"><p>술꾼도시여자들</p>
+      </a>
+    </div>
+  </div>
+
+  <div class="menu1">
+    <div class="flex-item">
+      <a href="n.html">
+        <img src="NE/택배기사.jpg" style=" width:190px; height: 190px;" alt="택배기사">
+        <p>택배기사</p>
+      </a>
+    </div>
+      
+    <div class="flex-item">
+      <a href="w.html">
+        <img src="wave/피의게임.jpg" style=" width:190px; height:190px;" alt="피의게임">
+        <p>피의게임</p>
+      </a>
+    </div>
+
+    <div class="flex-item">
+      <a href="t.html">
+        <img src="tb/신서유기.jpg" style=" width:190px; height: 190px;" alt="신서유기">
+        <p>신서유기</p>
+      </a>
+    </div>     
+  </div>
+
+  <div class="menu2">
+    <div class="flex-item">
+      <a href="n.html">
+        <img src="NE/기묘한이야기.jpg" style=" width:190px; height: 190px;" alt="기묘한이야기">
+        <p>기묘한이야기</p>
+      </a>
+    </div>
+  
+  <div class="flex-item">
+    <a href="w.html">
+      <img src="wave\그것이알고싶다.jpg"style=" width:180px; height: 190px;" alt="그것이 알고싶다">
+      <p>그것이 알고싶다</p>
+    </a>
+  </div>
+
+  <div class="flex-item">
+    <a href="t.html">
+      <img src="tb/지구오락실.jpg" style=" width:190px; height: 190px;" alt="지구오락실">
+      <p>지구오락실</p>
+    </a>
+  </div>
+</div>
+
+</body>
+</html>

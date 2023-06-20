@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="n.css">
+</head>
+<body>
+  <audio id =Nsound autoplay>
+    <source src= "nouveau-jingle-netflix.mp3" type="audio/mp3">
+  </audio>
+  <div class="ma">
+    <a href="./index.html" class="go" >메인으로 가기</a>
+  </div>
+  <div class="Netflex">
+    <img src="img.png" alt="넷슾핑수"width="400px" height="200px">
+  </div>
+      
+    <h3 class=" main">넷플릭스 시리즈</h3>
+    </div>
+  
+<div class="slideshow-container">  
+  <div class="TV1">
+    <div class="mySlides">
+      <img src="NE\기묘한이야기.jpg" width="300px" height="400px" alt="">  
+      <img src="NE/인간수업.jpg" width="300px" height="400px" alt="">
+      <img src="NE\스위트홈.jpg" width="300px" height="400px" alt="">
+      <img src="NE\어거스트러쉬.jpg" width="300px" height="400px" alt="">
+      <img src="NE\철인왕후.jpg" width="300px" height="400px" alt="">  
+      <img src="NE\체인지데이즈.jpg" width="300px" height="400px" alt="">
+    </div>
+    <div class="mySlides"> 
+      <img src="NE\DP.jpg" width="300px" height="400px" alt="">
+      <img src="NE\다운로드.jpg" width="300px" height="400px" alt="">
+      <img src="NE\택배기사.jpg" width="300px" height="400px" alt="">
+      <img src="NE\킹덤.jpg" width="300px" height="400px" alt="">
+      <img src="NE\더글로.jpg" width="300px" height="400px" alt="">
+      <img src="NE\체인지데이즈1.jpg" width="300px" height="400px" alt="">
+        
+      
+    </div>
+  </div>
+</div>
+  
+<script>
+  var slideIndex = 0;
+  showSlides();
+  
+  function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    
+    slideIndex++;
+    
+    if (slideIndex > slides.length) {
+      slideIndex = 1;
+    }
+    
+    slides[slideIndex - 1].style.display = "block";
+    
+    setTimeout(showSlides, 3000); 
+    var sound = document.getElementById('Nsound');
+
+soundElement.addEventListener('ended', function() {
+soundElement.pause();
+});
+
+  }
+</script>
+</body>
+</html>
+
